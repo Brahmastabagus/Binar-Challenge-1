@@ -1,3 +1,8 @@
+/* Import CSS Utilities */
+@import url('./utilities.css');
+/* Import CSS Responsive */
+@import url('./responsive.css');
+
 body {
   font-family: Helvetica;
 }
@@ -22,275 +27,6 @@ h5 {
   --warning: #F9CC00;
 }
 
-.transition-all-200 {
-  transition: all 0.2s ease !important;
-  -webkit-transition: all 0.2s ease !important;
-  -moz-transition: all 0.2s ease !important;
-  -ms-transition: all 0.2s ease !important;
-  -o-transition: all 0.2s ease !important;
-}
-
-.bg-dark-blue {
-  background-color: var(--dark-blue);
-}
-
-.bg-light-blue {
-  background-color: var(--light-blue);
-}
-
-.bg-lime-green {
-  background-color: var(--lime-green);
-}
-
-.bg-danger {
-  background-color: var(--danger);
-}
-
-.bg-warning {
-  background-color: var(--warning);
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-.list-group-item {
-  border: 0;
-  padding: 0;
-}
-
-.button {
-  padding: 8px 12px;
-  border-radius: 2px;
-  border: 0;
-  display: inline-block;
-}
-
-.button:hover {
-  background-color: #56ac59;
-}
-
-.btn-lime-green {
-  background-color: var(--lime-green);
-  color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-/* .text-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 54px;
-} */
-
-.text-title__2 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.text-desc {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-}
-
-.text-desc__2 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  width: fit-content;
-}
-
-.card-svg {
-  padding: 6px;
-  width: fit-content;
-  border-radius: 999px;
-}
-
-/* RESPONSIVE */
-@media screen and (max-width: 575.98px) {
-  .jumbotron {
-    padding-top: 2rem;
-  }
-
-  .jumbotron .jumbotron__img {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-
-  .jumbotron .jumbotron__img img {
-    width: 100%;
-  }
-
-  .testimonial .testimonial__cards {
-    flex-direction: column;
-  }
-
-  .text-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .jumbotron {
-    padding-top: 2rem;
-  }
-
-  .jumbotron .jumbotron__img {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-
-  .jumbotron .jumbotron__img img {
-    width: 95%;
-  }
-
-  .testimonial .testimonial__cards {
-    flex-direction: column;
-  }
-
-  .text-title {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 44px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    padding-top: 2rem;
-  }
-
-  .jumbotron .jumbotron__img {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-  }
-
-  .jumbotron .jumbotron__img img {
-    width: 700px;
-  }
-
-  .testimonial .testimonial__cards {
-    flex-direction: column;
-  }
-
-  .text-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .jumbotron {
-    padding-top: 2rem;
-  }
-
-  .jumbotron .jumbotron__img {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-  }
-
-  .jumbotron .jumbotron__img img {
-    width: 800px;
-  }
-
-  .testimonial .testimonial__cards {
-    flex-direction: row;
-  }
-
-  .text-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .jumbotron {
-    padding-top: 5rem;
-  }
-
-  .jumbotron .jumbotron__img {
-    display: block;
-    margin-top: 0rem;
-  }
-
-  .jumbotron .jumbotron__img img {
-    width: 590px;
-  }
-
-  .testimonial .testimonial__cards {
-    flex-direction: row;
-  }
-
-  .text-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
-  }
-}
-
-
-@media screen and (min-width: 1366px) {
-  .jumbotron {
-    padding-top: 5rem;
-  }
-
-  .jumbotron .jumbotron__img {
-    display: block;
-    margin-top: 0rem;
-  }
-
-  .jumbotron .jumbotron__img img {
-    width: 660px;
-  }
-
-  .testimonial .testimonial__cards {
-    flex-direction: row;
-  }
-
-  .text-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .jumbotron {
-    padding-top: 5rem;
-  }
-
-  .jumbotron .jumbotron__img {
-    display: block;
-    margin-top: 0rem;
-  }
-
-  .jumbotron .jumbotron__img img {
-    width: 660px;
-  }
-
-  .testimonial .testimonial__cards {
-    flex-direction: row;
-  }
-
-  .text-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
-  }
-}
-
 /* NAVBAR */
 nav.navbar {
   background-color: #f1f3ff;
@@ -298,6 +34,19 @@ nav.navbar {
 
 nav .nav-item {
   padding: .5rem;
+}
+
+nav .offcanvas-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+nav .offcanvas-header {
+  padding: 2.1rem 1rem 0 1rem;
+}
+
+nav .offcanvas-body {
+  padding: 1.1rem 1rem;
 }
 
 /* JUMBOTRON */
@@ -314,12 +63,7 @@ nav .nav-item {
 }
 
 /* SERVICE */
-.service {
-  padding-top: 6.2rem;
-}
-
 .service .service__check {
-  background-color: var(--light-blue);
   padding: 6px;
   border-radius: 999px;
 }
@@ -330,10 +74,6 @@ nav .nav-item {
 }
 
 /* WHY */
-.why {
-  padding-top: 6.2rem;
-}
-
 .why .why__desc {
   margin-bottom: 40px;
 }
@@ -344,18 +84,19 @@ nav .nav-item {
   line-height: 24px;
 }
 
-/* TESTIMONIAL */
-.testimonial {
-  padding-top: 6.2rem;
+.why .card .card-svg {
+  padding: 6px;
+  width: fit-content;
+  border-radius: 999px;
 }
 
+/* TESTIMONIAL */
 .testimonial .testimonial__text-desc {
   margin: 16px 0 40px 0;
 }
 
 .testimonial .testimonial__cards {
   background-color: #F1F3FF;
-  padding: 60px 40px;
   border: 0;
 }
 
@@ -399,25 +140,12 @@ nav .nav-item {
 }
 
 /* Started */
-.started {
-  padding-top: 6.2rem;
-}
-
 .started .started__getting {
-  background-color: var(--dark-blue);
   padding: 64px 0;
   border-radius: 13px;
 }
 
-.started .started__button {
-  margin-top: 52px;
-}
-
 /* FAQ */
-.faq {
-  padding-top: 6.2rem;
-}
-
 .faq .accordion-item:first-of-type {
   margin-top: 0;
 }
@@ -433,10 +161,6 @@ nav .nav-item {
 }
 
 /* FOOTER */
-footer.footer {
-  margin-top: 9.3rem;
-}
-
 .footer a:hover {
   text-decoration: underline;
 }
