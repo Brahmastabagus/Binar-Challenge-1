@@ -109,8 +109,8 @@ nav .offcanvas-body {
 }
 
 .testimonial .testimonial__cards .testimonial__img-testimonial {
-  width: fit-content !important;
-  height: fit-content;
+  width: 80px !important;
+  height: 80px;
 }
 
 .testimonial .testimonial__cards .testimonial__text-name {
